@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzain Resume Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Dynamic Resume Builder</h2>
+    <form id="resumeForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="qualification">Qualification</label>
+        <input type="qualification" id="qualification" name="qualification" required>
+
+        <label for="summary">Summary</label>
+        <textarea id="summary" name="summary" rows="4" required></textarea>
+
+        <label for="skills">Skills</label>
+        <textarea id="skills" name="skills" rows="4" required></textarea>
+
+        <label for="experince">Experince</label>
+        <textarea id="experience" name="experience" rows="3" required></textarea>
+        
+        <button type="button" onclick="generatePDF()">Download as PDF</button>
+        <button type="button" onclick="generateShareableLink()">Generate Shareable Link</button>
+
+        <div id="shareableLink"></div>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="Script.js"></script>
+</body>
+</html>
